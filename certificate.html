@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Verification - Shri RAM Traders Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars-overlay"></div>
+    <div class="portal-container">
+        <!-- Header -->
+        <header class="portal-header mini-header">
+            <h1 class="clickable" onclick="window.location.href='index.html'">Shri RAM Traders Club</h1>
+        </header>
+
+        <!-- Main Detail Frame -->
+        <main class="card detail-card hidden" id="valid-card">
+            <div class="verification-badge">
+                <div class="badge-icon">✓</div>
+                <div class="badge-text">
+                    <span class="badge-title">VERIFIED CERTIFICATE</span>
+                    <span class="badge-sub">Authentic & Active</span>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="cert-info">
+                <div class="info-group">
+                    <label>Student Name</label>
+                    <div class="info-value" id="student-name">-</div>
+                </div>
+                
+                <div class="info-group">
+                    <label>Program</label>
+                    <div class="info-value" id="program-name">-</div>
+                </div>
+                
+                <div class="info-group">
+                    <label>Course</label>
+                    <div class="info-value" id="course-name">-</div>
+                </div>
+
+                <div class="info-group half">
+                    <label>Certificate ID</label>
+                    <div class="info-value code" id="cert-id">-</div>
+                </div>
+
+                <div class="info-group half">
+                    <label>Issue Date</label>
+                    <div class="info-value" id="issue-date">-</div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="#" id="view-pdf-btn" target="_blank" class="btn btn-navy">View PDF</a>
+                <a href="#" id="download-pdf-btn" download class="btn btn-gold">Download PDF</a>
+            </div>
+        </main>
+
+        <!-- Invalid State Card -->
+        <main class="card error-card hidden" id="invalid-card">
+            <div class="verification-badge error">
+                <div class="badge-icon">✗</div>
+                <div class="badge-text">
+                    <span class="badge-title">INVALID CERTIFICATE</span>
+                    <span class="badge-sub">Not Found or Revoked</span>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <p class="error-msg">The Certificate ID you provided does not exist in our registry or has been deactivated. If you believe this is an error, please contact support.</p>
+            <button class="btn btn-gold" onclick="window.location.href='index.html'">Search Again</button>
+        </main>
+
+        <!-- Footer -->
+        <footer class="portal-footer">
+            <p>&copy; Shri RAM Traders Club. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri RAM Traders Club - Certificate Verification Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars-overlay"></div>
+    <div class="portal-container">
+        <!-- Logo Header -->
+        <header class="portal-header">
+            <img src="assets/logo.png" alt="Shri RAM Traders Club Logo" class="portal-logo" onerror="this.style.display='none'">
+            <h1>Shri RAM Traders Club</h1>
+            <p class="subtitle">Official Verification System</p>
+        </header>
+
+        <!-- Search Card -->
+        <main class="card search-card">
+            <h2>Verify Certificate</h2>
+            <p class="instructions">Enter the unique Certificate ID to verify its authenticity and view associated details.</p>
+            
+            <div class="search-form">
+                <input type="text" id="cert-id-input" placeholder="e.g. SRTC-2026-ATM-241" autocomplete="off">
+                <button id="search-btn" class="btn btn-gold">Verify Now</button>
+            </div>
+            
+            <div id="error-message" class="error-box hidden">
+                <span class="error-icon">⚠️</span>
+                <span id="error-text">Certificate ID not found. Please check and try again.</span>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="portal-footer">
+            <p>&copy; Shri RAM Traders Club. All rights reserved.</p>
+            <p>Back to <a href="https://shriramtradersclub.com" target="_blank">shriramtradersclub.com</a></p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
